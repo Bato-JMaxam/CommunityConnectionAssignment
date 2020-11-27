@@ -1,0 +1,82 @@
+[1mdiff --git a/TableTop.js b/TableTop.js[m
+[1mindex d180727..65c5160 100644[m
+[1m--- a/TableTop.js[m
+[1m+++ b/TableTop.js[m
+[36m@@ -8,12 +8,7 @@[m [mfunction todaysDate()[m
+ 	{[m
+ 	switch(month)[m
+ 	{[m
+[31m-		case 1:  mName="January"; break;[m
+[31m-		case 2:  mName="February"; break;	[m
+[31m-		case 3:  mName="March"; break;[m
+[31m-		case 4:  mName="April"; break;[m
+[31m-		case 5:  mName="May"; break;[m
+[31m-		case 6:  mName="June"; break;[m
+[32m+[m
+ 		case 7:  mName="July"; break;[m
+ 		case 8:  mName="August"; break;	[m
+ 		case 9:  mName="September"; break;[m
+[36m@@ -23,10 +18,7 @@[m [mfunction todaysDate()[m
+ 	}[m
+ 	return (mName);[m
+ 	}[m
+[31m-	month = rightNow.getMonth() + 1 ;[m
+[31m-	todaysDate = getMonthName(month) + '-' + rightNow.getDate() [m
+[31m-                + '-' + rightNow.getFullYear();	[m
+[31m-	document.getElementById("showDate").innerHTML = todaysDate;[m
+[32m+[m
+ }[m
+ [m
+ function changeTable()[m
+[1mdiff --git a/pump.cpp b/pump.cpp[m
+[1mindex 831e53a..b481c5a 100644[m
+[1m--- a/pump.cpp[m
+[1m+++ b/pump.cpp[m
+[36m@@ -4,15 +4,15 @@[m
+ [m
+ Pump::Pump()[m
+ {[m
+[31m-	cout << "Pump default constructed " << endl;[m
+[31m-	amtGas=0;[m
+[31m-	tankCapacity=10;[m
+[32m+[m	[32mcout << "Im change one Janis " << endl;[m
+[32m+[m	[32mamtGas=10000000000;[m
+[32m+[m	[32mtankCapacity=2222222222222222;[m
+ }[m
+ Pump::Pump(int newAmtGas, int newTankCapacity)[m
+ {[m
+[31m-	cout << " pump non default " << endl;[m
+[31m-	amtGas = newAmtGas < 0 ? 0 : newAmtGas;[m
+[31m-	tankCapacity = newTankCapacity < 0 ? 0 : newTankCapacity;[m
+[32m+[m	[32mcout << " Im change one Janis 2 " << endl;[m
+[32m+[m	[32mamtGas = newAmtGas < 5 ? 5 : newAmtGas;[m
+[32m+[m	[32mtankCapacity = newTankCapacity < 5 ? 5 : newTankCapacity;[m
+ }[m
+ void Pump::showPump(ostream& out)const[m
+ {[m
+[1mdiff --git a/server.js b/server.js[m
+[1mindex d1cef62..930eede 100644[m
+[1m--- a/server.js[m
+[1m+++ b/server.js[m
+[36m@@ -9,10 +9,10 @@[m [mvar server = app.listen(3000,()=>{[m
+     console.log('Server started on port ' + server.address().port) [m
+     console.log('started')[m
+ })[m
+[31m-[m
+[32m+[m[32m<hi> im not too sure this is what you ment by Adding Janis but here ya go </hi>[m[41m [m
+ app.get('/order',(req,res)=>{[m
+ [m
+[31m-    if (req.query.name===undefined) res.send ("<h1>'name' input undefined</h1>")[m
+[32m+[m[32m    if (req.query.name===undefined) res.send ("<h1>'Can you see me' input undefined</h1>")[m
+     else[m
+     if (req.query.email===undefined) res.send ("<h1>'email' input undefined</h1>")[m
+     else[m
+[36m@@ -31,7 +31,7 @@[m [mapp.get('/order',(req,res)=>{[m
+     else[m
+     res.send ("<h1>Correct - all required request parameters have been received</h1>")[m
+ })[m
+[31m-[m
+[32m+[m[32m<hi> i Hope this counts as two addions... or is it addition? </hi>[m
+ app.post('/order',(req,res)=>{[m
+ [m
+     let html="<h1>Correct</h1>"[m

@@ -9,10 +9,10 @@ var server = app.listen(3000,()=>{
     console.log('Server started on port ' + server.address().port) 
     console.log('started')
 })
-
+<hi> im not too sure this is what you ment by Adding Janis but here ya go </hi> 
 app.get('/order',(req,res)=>{
 
-    if (req.query.name===undefined) res.send ("<h1>'name' input undefined</h1>")
+    if (req.query.name===undefined) res.send ("<h1>'Can you see me' input undefined</h1>")
     else
     if (req.query.email===undefined) res.send ("<h1>'email' input undefined</h1>")
     else
@@ -31,7 +31,7 @@ app.get('/order',(req,res)=>{
     else
     res.send ("<h1>Correct - all required request parameters have been received</h1>")
 })
-
+<hi> i Hope this counts as two addions... or is it addition? </hi>
 app.post('/order',(req,res)=>{
 
     let html="<h1>Correct</h1>"

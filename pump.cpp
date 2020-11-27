@@ -4,15 +4,15 @@
 
 Pump::Pump()
 {
-	cout << "Pump default constructed " << endl;
-	amtGas=0;
-	tankCapacity=10;
+	cout << "Im change one Janis " << endl;
+	amtGas=10000000000;
+	tankCapacity=2222222222222222;
 }
 Pump::Pump(int newAmtGas, int newTankCapacity)
 {
-	cout << " pump non default " << endl;
-	amtGas = newAmtGas < 0 ? 0 : newAmtGas;
-	tankCapacity = newTankCapacity < 0 ? 0 : newTankCapacity;
+	cout << " Im change one Janis 2 " << endl;
+	amtGas = newAmtGas < 5 ? 5 : newAmtGas;
+	tankCapacity = newTankCapacity < 5 ? 5 : newTankCapacity;
 }
 void Pump::showPump(ostream& out)const
 {
